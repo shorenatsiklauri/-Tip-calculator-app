@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;900&family=Kumbh+Sans:wght@400;700&family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+}
+.title {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: 86.66px;
+  height: 53.14px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #3d6666;
+}
+.card {
+  background: #ffffff;
+  width: 700px;
+  border-radius: 1rem;
+}
+.card-box {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+.inputs-box,
+.outputs-box {
+  width: 50%;
+  flex-direction: column;
+}
+.outputs-box {
+  background: #00474b;
+  border-radius: 15px;
+}
+.bill-box,
+.tip-box,
+.people-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.inputs-box {
+  gap: 2rem;
+}
+label {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+.bill-input,
+.people-input {
+  position: relative;
+}
+.bill-input input,
+.people-input input {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  color: #00474b;
+  background: #f3f9fa;
+  border: none;
+}
+.tip-btns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.tip-btns button {
+  height: 48px;
+  width: 90px;
+  border-radius: 7px;
+  background-color: #00474b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+.tip-btns button:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.resetbutton:hover {
+  background-color: #9fe8df;
+  color: #00474b;
+}
+.selected {
+  background-color: #9fe8df !important;
+  color: #00474b !important;
+}
+.tip-btns input {
+  width: 90px;
+  padding: 0.5rem;
+  text-align: center;
+  border: none;
+  background: #f3f9fa;
+}
+
+#custom {
+  height: 48px;
+  width: 90px;
+  border-radius: 7px;
+  margin-top: 15px;
+  color: #00474b;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+}
+
+.outputs-box {
+  gap: 2rem;
+}
+.tip-amount,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.tip-amount h2,
+.total h2 {
+  color: #26c2ae;
+  font-size: 2rem;
+}
+
+.tip-amount span,
+.total span {
+  font-size: 12px;
+  color: #7f9d9f;
+}
+.tip-amount p,
+.total p {
+  color: white;
+}
+
+.resetbutton {
+  margin: 30px;
+  padding: 8px;
+  text-transform: uppercase;
+  background-color: #0d686d;
+  border: none;
+  border-radius: 4px;
+  opacity: 40%;
+  height: 48px;
+  width: 250px;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c5e4e7;
+    font-family: "Space Mono", monospace;
+  }
+
+  .card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 1rem;
+  }
+
+  .card-box {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .inputs-box,
+  .outputs-box {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .bill-box,
+  .tip-box,
+  .people-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .inputs-box {
+    gap: 2rem;
+  }
+
+  label {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5e7a7d;
+  }
+
+  .bill-input input,
+  .people-input input {
+    width: 100%;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    color: #00474b;
+    background: #f3f9fa;
+    border: none;
+  }
+
+  .tip-btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .tip-btns button {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  #custom {
+    height: 48px;
+    width: 200px;
+    border-radius: 7px;
+    margin-top: 15px;
+    color: #00474b;
+    font-size: 20px;
+    font-family: "Space Mono", monospace;
+  }
+
+  .people-box {
+    margin-top: -380px;
+  }
+
+  .resetbutton {
+    margin: 80px;
+  }
+}
