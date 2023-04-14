@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://shorenatsiklauri.github.io/-Tip-calculator-app)
+- Live Site URL: ([https://shorenatsiklauri.github.io/-Tip-calculator-app/])
 
 ## My process
 
